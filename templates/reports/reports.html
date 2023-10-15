@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reportes</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/dashboard.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/main.css') }}"
+    />
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='styles/reports-table.css') }}"
+    />
+
+  </head>
+  <body>
+    <aside class="sidebar" id="sidebar">
+      <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        alt="logo"
+        class="logo"
+        height="100px"
+        width="110px"
+      />
+
+      <a href="/" class="sidebar-redirect-btn"> Home </a>
+
+      <a href="/surveillance" class="sidebar-redirect-btn"> Vigilancia </a>
+
+      <a href="/reports" class="sidebar-redirect-btn"> Reportes </a>
+    </aside>
+
+    <main class="main-content">
+      <section class="content">
+        <h1>Reportes </h1>
+
+        <div class="reports scrollable">
+            <table class="reports__table scrollable" >
+                <thead>
+                    <tr>
+                        <th> Nombre de la cámara</th>
+                        <th> Confianza </th>
+                        <th >Detección </th>
+                        <th> imagen </th>
+                        <th>Fecha y hora</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody class="reports__table-body">
+
+                </tbody>
+            </table>
+        </div>
+      </section>
+    </main>
+    <script src="{{ url_for('static', filename='scripts/session.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/tokenUtils.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/reports.js') }}"></script>
+    <script>
+
+        
+
+
+    </script>
+  </body>
+</html>

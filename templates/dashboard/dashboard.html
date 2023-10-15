@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/dashboard.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/main.css') }}"
+    />
+
+  </head>
+  <body>
+    <aside class="sidebar" id="sidebar">
+      <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        alt="logo"
+        class="logo"
+        height="100px"
+        width="110px"
+      />
+
+
+      <a href="/" class="sidebar-redirect-btn"> Home </a>
+
+      <a href="/surveillance" class="sidebar-redirect-btn"> Vigilancia </a>
+
+      <a href="/reports" class="sidebar-redirect-btn"> Reportes </a>
+    </aside>
+
+    <main class="main-content">
+      <section class="content">
+        <h1>Panel de estadisticas</h1>
+
+        <div class="centered-container">
+
+
+        </div>
+      </section>
+    </main>
+    <script src="{{ url_for('static', filename='scripts/session.js') }}"></script>
+  </body>
+</html>
